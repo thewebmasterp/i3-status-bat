@@ -1,41 +1,45 @@
 {
-  "name": "i3-status-starter",
-  "version": "0.1.4",
-  "description": "Template for writing own modules for i3-status",
-  "main": "lib/index.js",
-  "url": "https://github.com/fehmer/i3-status-starter/issues",
-  "scripts": {
-    "prepublish": "npm run compile",
-    "compile": "babel src/ -d lib -s",
-    "test": "npm run compile && node_modules/mocha/bin/mocha --compilers js:babel-register test --recursive --reporter gitlablist-mocha",
-    "watch": "npm run compile && (babel -w src/ -d lib -s &) && node_modules/mocha/bin/mocha --compilers js:babel-register test --recursive  --reporter min --watch",
-    "cover": "npm run compile && istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-core/register --colors --reporter dot test/ --recursive"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fehmer/i3-status-starter.git"
-  },
-  "babel": {
-    "presets": [
-      "latest"
-    ]
-  },
-  "keywords": [
-    "i3",
-    "i3wm",
-    "i3-status",
-    "i3block"
-  ],
-  "author": "Christian Fehmer",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-latest": "^6.16.0",
-    "chai": "^4.0.2",
-    "codacy-coverage": "^2.0.0",
-    "gitlablist-mocha": "^1.0.2",
-    "istanbul": "^1.1.0-alpha.1",
-    "mocha": "^3.2.0"
-  }
+    "name": "i3-status-bat",
+    "version": "0.1.0",
+    "description": "i3-status module showing battery",
+    "main": "lib/index.js",
+    "url": "https://github.com/fehmer/i3-status-starter/issues",
+    "scripts": {
+        "prepublish": "npm run compile",
+        "compile": "babel src/ -d lib -s",
+        "test": "npm run compile && node_modules/mocha/bin/mocha --compilers js:babel-register test --recursive --reporter gitlablist-mocha",
+        "watch": "npm run compile && (babel -w src/ -d lib -s &) && node_modules/mocha/bin/mocha --compilers js:babel-register test --recursive  --reporter min --watch",
+        "cover": "npm run compile && istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-core/register --colors --reporter dot test/ --recursive"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fehmer/i3-status-starter.git"
+    },
+    "babel": {
+        "presets": [
+            "latest"
+        ]
+    },
+    "keywords": [
+        "i3",
+        "i3wm",
+        "i3-status",
+        "i3block",
+        "i3status",
+        "i3-status-module"
+    ],
+    "author": "Zdravko Dimov",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-cli": "^6.18.0",
+        "babel-preset-latest": "^6.16.0",
+        "chai": "^4.0.2",
+        "codacy-coverage": "^2.0.0",
+        "gitlablist-mocha": "^1.0.2",
+        "istanbul": "^1.1.0-alpha.1",
+        "mocha": "^3.2.0"
+    },
+    "dependencies": {
+        "systeminformation": "^4.14.4"
+    }
 }
