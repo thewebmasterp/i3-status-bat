@@ -1,6 +1,6 @@
 {
   "name": "i3-status-bat",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "i3-status module for showing the battery status of your laptop.",
   "main": "lib/index.js",
   "url": "https://github.com/thewebmasterp/i3-status-bat/issues",
