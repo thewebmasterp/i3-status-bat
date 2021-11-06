@@ -14,7 +14,7 @@ blocks:
 blocks:
   - name: battery
     module: i3-status-bat
-    chargingColor: #a6cc33      # The color of the text when the device is charging
+    chargingColor: '#a6cc33'      # The color of the text when the device is charging
     chargingChar: '🔌'          # The character in front of the module when charging
     dischargingColor: '#c38418' # The color of the text when the device is discharging
     dischargingChar: '🔋'       # The character in front of the module when discharging
