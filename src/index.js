@@ -68,7 +68,7 @@ export default class Text extends EventEmitter {
       min = min % 60
     }
     return `${this.format(h)}:${this.format(min)}`
-  }1
+  }
 
   format(num) {
     return num < 10 ? `0${num}` : num
