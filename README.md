@@ -16,7 +16,7 @@ blocks:
 blocks:
   - name: battery
     module: i3-status-battery
-    chargingColor:              # The color of the text when the device is *charging*
+    chargingColor:              # The color of the text when the device is **charging**
     chargingChar:               # The character in front of the module when *charging*
     dischargingColor:           # The color of the text when the device is *discharging*
     dischargingChar:            # The character in front of the module when *discharging*
@@ -24,5 +24,9 @@ blocks:
     criticalThreshold:          # Below what percentage should the charge be considered critical?
 ```
 
+Learn more at how to configure it at [i3-status](https://github.com/fehmer/i3-status) and specifically, [this](https://github.com/fehmer/i3-status#user-content-configuration) section.
+
+
+
 Note: I forked this module from [i3-status-battery](https://github.com/mintao/i3-status-battery) and improved it by
-publishing it to npm, writing better documentation and adding a few more features. 
+publishing it to [npm](), writing better documentation and adding a few more features.
