@@ -1,9 +1,9 @@
 {
     "name": "i3-status-bat",
     "version": "0.1.0",
-    "description": "i3-status module showing battery",
+    "description": "i3-status module for showing the battery level",
     "main": "lib/index.js",
-    "url": "https://github.com/fehmer/i3-status-starter/issues",
+    "url": "https://github.com/thewebmasterp/i3-status-bat/issues", 
     "scripts": {
         "prepublish": "npm run compile",
         "compile": "babel src/ -d lib -s",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/fehmer/i3-status-starter.git"
+        "url": "https://github.com/thewebmasterp/i3-status-bat.git"
     },
     "babel": {
         "presets": [
@@ -28,7 +28,7 @@
         "i3status",
         "i3-status-module"
     ],
-    "author": "Zdravko Dimov",
+    "author": "thewebmasterp",
     "license": "MIT",
     "devDependencies": {
         "babel-cli": "^6.18.0",
